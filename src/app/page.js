@@ -1,24 +1,31 @@
 import Image from 'next/image'
+import Header from '../../components/header'
+import Arrivals from '../../components/arrivals'
+import Footer from '../../components/footer'
+
+// look for away to make the component imports one line^
 
 export default function Home() {
   return (
-    <main className="border-2 flex min-h-screen flex-col">
-          {/* hero */}
-          <div className='border-red-500 border-2 min-h-screen flex-col'>
-            <h1> home page </h1>
-          </div>
-          {/* component holding comics */}
-          <div className='border-red-500 border-2 flex-col'>
-            <h1> home page </h1>
-          </div>
-          {/* image */}
-          <div>
+    <div>    
 
-          </div>
-          {/* how to use */}
-          <div>
+      {/* nav component above main */}
+      <Header />
+      <main className="border-2 flex min-h-screen flex-col">
             
-          </div>
-    </main>
+            <Arrivals />
+            {/* image */}
+            <div className='border-red-500 border-2 flex-col'>
+              <h1> home page </h1>
+            </div>
+            {/* how to use */}
+            <div className='border-red-500 border-2 flex-col'>
+              <h1> home page </h1>
+            </div>
+      </main>  
+      {/* footer component */}
+      <Footer />
+    </div>
+
   )
 }
