@@ -3,11 +3,10 @@ import standing from "../images/standing.jpg"
 
 function HomePage() {
 
-    const img = {backgroundImage: `url(${standing})`}
-
+    const background = {backgroundImage: `url(${standing})`}
     return (
         <div>
-            <Header background={img} />
+            <Header background={background} />
             <p> Welcome to the home page! </p>
         </div>
     )
