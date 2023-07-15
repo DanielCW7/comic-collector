@@ -1,5 +1,9 @@
 function About() {
-    return <div>Welcome to the about page!</div>;
+    return (
+      <div className="border-red-300 border-8">
+        Welcome to the about page!
+      </div>
+    )
   }
   
   export default About;
