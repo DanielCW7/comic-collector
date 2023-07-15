@@ -1,8 +1,11 @@
 
 const NewArrivals = () => {
     return (
-        <div className="min-h-3/4 bg-fixed bg-cover bg-center bg-no-repeat md:min-h-1/2 border-8">
-            <p> images go here </p>
+        <div className="min-h-1/4 p-5 flex flex-col justify-center text-center bg-white">
+            <h2 className="text-black font-bold text-2xl"> New Arrivals </h2>
+            <div>
+                {/* comics component / filter? */}
+            </div>
         </div>
     )
 }
