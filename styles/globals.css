@@ -26,3 +26,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* nav */
+.closed {
+  max-height: 0px;
+}
+
+.open {
+  max-height: 100px;
+}

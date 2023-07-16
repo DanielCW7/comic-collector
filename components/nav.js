@@ -1,26 +1,32 @@
+import React, { useState } from "react";
 import Link from "next/link";
 
-
-
-
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    // need to toggle a class on/off of the nav to creating a smooth transition, need hooks
-    function toggle() {
-        console.log("clicked on nav")
-    }
+  function toggle() {
+    setIsOpen((prevIsOpen) => !prevIsOpen);
+  }
 
-    return (
-        <nav className="sticky bg-black w-screen top-0">
-            <p id="nav" onClick={toggle}> click </p>
-            <ul className="bg-gray-500">
-                <li className="p-2 border bg-red-400"><Link href="/"> Home </Link></li>
-                <li className="p-2 border"><Link href="/search"> Search </Link></li>
-            </ul>
-        </nav>
-    )
-}
+  return (
+    <nav className="fixed bg-gray-900 w-screen top-0 z-10 overflow-hidden">
+      <p id="nav" onClick={toggle} className="p-5 text-right"> = </p>      
+      <ul
+        id="navOptions"
+        className={`transition-all duration-500 overflow-hidden ${
+          isOpen ? "open" : "closed"
+        }`}
+      >
+        <li className="p-2 text-right">
+          <Link href="/">Home</Link>
+        </li>
+        <li className="p-2 text-right">
+          <Link href="/search">Search</Link>
+        </li>
+      </ul>
 
+    </nav>
+  );
+};
 
-export default Nav    
-
+export default Nav;
