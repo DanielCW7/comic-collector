@@ -9,7 +9,7 @@ function Search() {
     return (
       <div className="">
         <header className="min-h-3/4 bg-cover bg-start bg-no-repeat md:min-h-1/2" style={background}>
-          <Header heading="search" subheading="find the comics you've been missing out on." link="/" cta="home"/>
+          <Header heading="search" subheading="find the comics you've been missing out on." link="/" cta="home" />
         </header>
       </div>
     )
