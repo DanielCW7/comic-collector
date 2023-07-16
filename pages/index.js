@@ -11,12 +11,14 @@ function HomePage() {
 
     return (
         <div>
+            
             <header className="min-h-3/4 bg-cover bg-start bg-no-repeat md:min-h-1/2" style={background}>
-                <Header heading="Comic Book Finder" subheading="Browse some of your favorite comic books!"/>
+                <Header heading="Comic Book Finder" subheading="Browse some of your favorite comic books!" link="/search" cta="search" />
             </header>
+
             <NewArrivals />
 
-            <div className="flex flex-col justify-center md:gap-10 md:flex-row md:px-5 md:py-20 bg-gray-100">
+            <main className="flex flex-col justify-center md:gap-10 md:flex-row md:px-5 md:py-20 bg-gray-100">
                 <div className="relative min-h-1/2 lg:min-h-none md:w-1/2 lg:max-w-2xl">
                     <Image src={camera} alt="camera on comics" layout="fill" objectFit="cover" className="w-full h-full"/>
                 </div>
@@ -31,10 +33,7 @@ function HomePage() {
                         what inspired it. blah blah blah
                     </p>                    
                 </div>
-
-            </div>
-
-            <NewArrivals />
+            </main>
 
         </div>
     )
