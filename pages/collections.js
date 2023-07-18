@@ -1,7 +1,7 @@
 import Header from "@/components/header";
 import picking from "../images/picking.jpg";
 import Nav from "@/components/nav";
-import CollectionContainer from "@/components/CollectionContainer";
+import CollectionContainer from "../components/collectionContainer";
 
 function Collection() {
 

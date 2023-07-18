@@ -5,7 +5,7 @@ import spiderman from "../images/comicbook_1.webp";
 const DetailedComic = (props) => {
     
     return (
-        <div className="flex flex-row p-5 max-w-md m-auto">
+        <div className="flex flex-row p-5 max-w-md">
             <Image src={spiderman} alt="ex" height={130} width={130} className="m-auto" />
             
             <div className="flex flex-col p-2">
