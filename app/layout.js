@@ -1,3 +1,5 @@
+import Footer from "./sections/footer";
+import Nav from "./sections/nav";
 import "./styles/globals.css";
 
 export const metadata = {

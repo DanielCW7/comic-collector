@@ -26,3 +26,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.max-site-width {
+  max-width: 1440px !important;
+}
