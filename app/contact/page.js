@@ -7,6 +7,7 @@ function Contact() {
 
     return (
         <>
+            {/* consider changing to "collections" */}
             <Nav />
             <Hero />
             <h1>

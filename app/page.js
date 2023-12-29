@@ -12,10 +12,6 @@ function HomePage() {
         <Layout>
             <Nav />
             <Hero />
-            <h1>
-                h1 index
-            </h1>
-
             <Recents />
             <Footer />
         </Layout>

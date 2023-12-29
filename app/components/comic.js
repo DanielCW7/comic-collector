@@ -3,7 +3,7 @@ import Cover from "../images/cover.webp"
 
 const Comic = () => {
     return (
-        <div className="card card-side compact-card shadow-md">
+        <div className="card card-side shadow-md max-w-lg m-auto">
             <figure className="w-32"><Image src={Cover} /></figure>
             <div className="card-body text-black m-auto">
                 <h3 className="text-2xl font-black card-title"> Spider-man & Venom </h3> 
